@@ -1,3 +1,29 @@
-.logo{
-    height: 80px;
+.App{
+    text-align: center;
+}
+.countnum{
+    text-align: center;
+    font-size: 50px;
+    
+}
+.box{
+    margin: auto;
+    max-width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: black 0px 1px 4px ;
+    align-content: center;
+}
+button{
+    padding: 10px;
+    margin:10px;
+    color: aliceblue;
+}
+button.addButton{
+    
+  background-color: green;
+  
+}
+button.sub{
+    background-color: red;
 }

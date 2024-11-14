@@ -1,17 +1,27 @@
-import { Header } from "./components/Header"
-import { Footer } from "./components/Footer";
+import { useState } from 'react';
 import './App.css';
 
 function App() {
-  
+  const [count,setCount]=useState(0);
+  function addcount(){
+    setCount(count+1);
+    console.log(useState);
+  }
+  function subcount(){
+    setCount(count-1);
+    console.log(count);
+  }
   return (
     <>
-    <Header/>
+    
     <div className="App">
-      <h1>Vanako!</h1>
-     
+      <div className="box">
+      <p className='countnum'>{count}</p>
+      <button onClick={addcount} className="addButton">ADD</button>
+      <button onClick={subcount} className='sub'>SUB</button>
+      </div>
     </div>
-    <Footer/>
+    
     </>
     
   );
