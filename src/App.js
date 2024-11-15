@@ -2,25 +2,34 @@ import { useState } from 'react';
 import './App.css';
 
 function App() {
-  const [count,setCount]=useState(0);
-  function addcount(){
-    setCount(count => count+1);
-    setCount(count => count+1);
-    setCount(count => count+1);
-    console.log(useState);
+  const [tasks,settasks]=useState([{id:1,name :"Planner",completed:false},
+    {id:2,name :"Date Populate",completed:true},
+    {id:3,name :"Supplier Populate",completed:true}]);
+  // function addcount(){
+  //   setCount(count => count+1);
+  //   setCount(count => count+1);
+  //   setCount(count => count+1);
+  //   console.log(useState);
+  // }
+  // function subcount(){
+  //   setCount(count-1);
+  //   console.log(count);
+  function deletetask(input){
+    settasks(tasks.filter(tasks => tasks.id !==input))
   }
-  function subcount(){
-    setCount(count-1);
-    console.log(count);
-  }
+  // }
   return (
     <>
     
     <div className="App">
       <div className="box">
-      <p className='countnum'>{count}</p>
-      <button onClick={addcount} className="addButton">ADD</button>
-      <button onClick={subcount} className='sub'>SUB</button>
+      <ul>
+        { tasks.map((task,id) => (
+          <li key={id}>{task.id} - {task.name}
+          <button className="sub" onClick={() => deletetask(id)}>Delete</button>
+          </li>))
+          }
+      </ul>
       </div>
     </div>
     
