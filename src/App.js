@@ -15,6 +15,7 @@ function App() {
   //   setCount(count-1);
   //   console.log(count);
   function deletetask(input){
+    console.log(input)
     settasks(tasks.filter(tasks => tasks.id !==input))
   }
   // }
@@ -24,9 +25,9 @@ function App() {
     <div className="App">
       <div className="box">
       <ul>
-        { tasks.map((task,id) => (
-          <li key={id}>{task.id} - {task.name}
-          <button className="sub" onClick={() => deletetask(id)}>Delete</button>
+        { tasks.map((task) => (
+          <li key={task.id}>{task.id} - {task.name}
+          <button className="sub" onClick={() => deletetask(task.id)}>Delete</button>
           </li>))
           }
       </ul>
