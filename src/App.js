@@ -28,7 +28,7 @@ function App() {
       <ul>
         <button className='addButton' onClick={() => setShow(!show) } >Toggle</button>
         { show && tasks.map((task) => (
-          <li key={task.id}>{task.id} - {task.name}
+          <li key={task.id} className='subbox'>{task.id} - {task.name}
           <button className="sub" onClick={() => deletetask(task.id)}>Delete</button>
           </li>))
           }
