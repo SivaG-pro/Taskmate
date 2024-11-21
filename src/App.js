@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import './App.css';
+import { Header } from './components/Header';
+import './App.css'
+
 
 function App() {
   const [tasks,settasks]=useState([{id:1,name :"Planner",completed:false},
@@ -22,7 +24,7 @@ function App() {
   // }
   return (
     <>
-    
+    <Header/>
     <div className="App">
       <div className="box">
       <ul>

@@ -39,3 +39,12 @@ button.sub{
 .incomplete{
     color:red;
 }
+
+.logo{
+    height: 70px;
+}
+
+.nav{
+    position:relative;
+    left: 90%;
+}
