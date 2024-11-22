@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export  function Task() {
+export  function Task(props) {
     const [tasks,settasks]=useState([{id:1,name :"Planner",completed:false},
         {id:2,name :"Date Populate",completed:true},
         {id:3,name :"Supplier Populate",completed:true}]);
@@ -22,6 +22,7 @@ export  function Task() {
     <div className="App">
       <div className="box">
       <ul>
+        <h1>Task {props.title}</h1>
         <button className='addButton' onClick={() => setShow(!show) } >Toggle</button>
         
         { show && tasks.map((task) => (

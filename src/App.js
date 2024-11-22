@@ -10,7 +10,7 @@ function App() {
   return (
     <>
     <Header/>
-    <Task/>
+    <Task title='Mate'/>
     
     </>
     
