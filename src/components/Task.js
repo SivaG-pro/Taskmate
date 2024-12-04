@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import { TaskCard } from './TaskCard';
 export  function Task(props) {
     const [tasks,settasks]=useState([{id:1,name :"Planner",completed:false},
         {id:2,name :"Date Populate",completed:true},
@@ -24,13 +24,13 @@ export  function Task(props) {
       <ul>
         <h1>Task {props.title}</h1>
         <button className='addButton' onClick={() => setShow(!show) } >Toggle</button>
-        
         { show && tasks.map((task) => (
+          <TaskCard key={task.id} task={task}  deletetask={deletetask} />
+        
           
-          <li key={task.id} className={task.completed ? "complete":"incomplete"} >{task.id} - {task.name}
-          <button className="sub" onClick={() => deletetask(task.id)}>Delete</button>
-          </li>))
+          ))
           }
+        
         
       </ul>
       </div>
