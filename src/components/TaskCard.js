@@ -1,9 +1,9 @@
-export  function TaskCard(props) {
+export  function TaskCard({task,deletetask}) {
   return (
     <div>
       
-          <li className={props.task.completed ? "complete":"incomplete"} >{props.task.id} - {props.task.name}
-          <button className="sub" onClick={() => props.deletetask(props.task.id)}>Delete</button>
+          <li className={task.completed ? "complete":"incomplete"} >{task.id} - {task.name}
+          <button className="sub" onClick={() => deletetask(task.id)}>Delete</button>
           </li>
     </div>
   )
