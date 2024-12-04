@@ -26,13 +26,20 @@ export  function Task(props) {
         <button className='addButton' onClick={() => setShow(!show) } >Toggle</button>
         { show && tasks.map((task) => (
           <TaskCard key={task.id} task={task}  deletetask={deletetask} />
-        
+          
           
           ))
           }
         
         
       </ul>
+      {/* <div className="boxcard">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, excepturi!</p>
+      </div>
+
+      <div className="boxcard">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, excepturi!</p>
+      </div> */}
       </div>
     </div>
     

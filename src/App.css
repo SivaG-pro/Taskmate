@@ -14,18 +14,28 @@
     box-shadow: black 0px 1px 4px ;
     align-content: center;
 }
+.boxcard{
+    margin: auto;
+    max-width: 500px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: black 0px 1px 4px ;
+    align-content: center;
+}
 ul {
     list-style-type: none;
     }
 
 button{
-    padding: 10px;
+    padding: 5px;
+    border-radius: 5px;
     margin:10px;
     color: aliceblue;
 }
 button.addButton{
     
   background-color: green;
+  
   
 }
 button.sub{
@@ -34,6 +44,7 @@ button.sub{
 
 .complete{
     color:rgb(12, 228, 12);
+    
 }
 
 .incomplete{
