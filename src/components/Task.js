@@ -33,13 +33,15 @@ export  function Task(props) {
         
         
       </ul>
-      {/* <div className="boxcard">
+      
+      </div>
+      <br />
+      <div className="boxes">
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, excepturi!</p>
       </div>
-
-      <div className="boxcard">
+          <br />
+      <div className="boxes">
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, excepturi!</p>
-      </div> */}
       </div>
     </div>
     

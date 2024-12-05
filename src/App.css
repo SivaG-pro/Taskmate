@@ -22,6 +22,14 @@
     box-shadow: black 0px 1px 4px ;
     align-content: center;
 }
+.boxes{
+    width: 300px;
+    box-shadow: black 0px 1px 4px ;
+  padding: 10px;
+  margin: auto;
+  align-content: center;
+  border-radius: 5px;
+}
 ul {
     list-style-type: none;
     }
