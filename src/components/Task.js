@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { TaskCard } from './TaskCard';
+import { BoxCard } from './BoxCard';
 export  function Task(props) {
     const [tasks,settasks]=useState([{id:1,name :"Planner",completed:false},
         {id:2,name :"Date Populate",completed:true},
@@ -36,13 +37,16 @@ export  function Task(props) {
       
       </div>
       <br />
-      <div className="boxes">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, excepturi!</p>
-      </div>
+      <BoxCard result="success">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, excepturi!</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, excepturi!</p>
+      </BoxCard>
+        
+      
           <br />
-      <div className="boxes">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, excepturi!</p>
-      </div>
+      
+        
+      
     </div>
     
  

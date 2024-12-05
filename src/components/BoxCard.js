@@ -1,8 +1,10 @@
-export  function BoxCard() {
+import { Children } from "react";
+
+export  function BoxCard({result,Children}) {
   return (
-    <div>
+    <div className="box">
         
-      
+      {Children}
     </div>
   )
 }
