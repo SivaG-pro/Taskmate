@@ -20,35 +20,25 @@ export  function Task(props) {
         settasks(tasks.filter(tasks => tasks.id !==input))
       }
   return (
-    <div className="App">
+    <>
       <div className="box">
       <ul>
         <h1>Task {props.title}</h1>
         <button className='addButton' onClick={() => setShow(!show) } >Toggle</button>
         { show && tasks.map((task) => (
           <TaskCard key={task.id} task={task}  deletetask={deletetask} />
-          
-          
           ))
           }
-        
-        
       </ul>
-      
       </div>
       <br />
-      <BoxCard result="success">
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, excepturi!</p>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, excepturi!</p>
+      <BoxCard result="warning">
+        
+        <p>Need to check planner feedbacks.</p>
+        <p>Need to test in production.</p>
+        
+      
       </BoxCard>
-        
-      
-          <br />
-      
-        
-      
-    </div>
-    
- 
+      </>
   )
 }
