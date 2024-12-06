@@ -66,3 +66,8 @@ button.sub{
 .warning{
     background-color: lightcoral;
 }
+
+.hide{
+    color:white;
+    background-color: blue;
+}

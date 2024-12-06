@@ -33,12 +33,20 @@ export  function Task(props) {
       </div>
       <br />
       <BoxCard result="warning">
-        
         <p>Need to check planner feedbacks.</p>
-        <p>Need to test in production.</p>
         
+      </BoxCard>
+      <br />
+      <BoxCard result="success">
+      <p>Completed implementation and QA tested successfully.</p>
       
       </BoxCard>
+      <br />
+      <BoxCard result="success">
+      <p>Supplier populated successfully.</p>
+      
+      </BoxCard>
+    
       </>
   )
 }
