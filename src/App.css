@@ -22,9 +22,11 @@
   align-content: center;
   border-radius: 5px;
 }
-ul {
-    list-style-type: none;
-    }
+
+
+li{
+    list-style: none;
+}
 
 button{
     padding: 5px;
