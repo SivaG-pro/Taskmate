@@ -24,7 +24,7 @@ export  function Task(props) {
       <div className="box">
       <ul>
         <h1>Task {props.title}</h1>
-        <button className='addButton' onClick={() => setShow(!show) } >Toggle</button>
+        <button className='addButton' onClick={() => setShow(!show) } >{show ? "Hide":"Show"}</button>
         { show && tasks.map((task) => (
           <TaskCard key={task.id} task={task}  deletetask={deletetask} />
           ))

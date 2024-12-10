@@ -47,6 +47,10 @@ button.sub{
 .complete{
     color:rgb(12, 228, 12);
     
+    
+}
+.box span{
+    box-shadow: rgb(12, 228, 12);
 }
 
 .incomplete{
