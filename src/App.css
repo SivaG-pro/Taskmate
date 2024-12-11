@@ -13,7 +13,6 @@
     align-content: center;
     text-align: center;
 }
-/*  */
 
 
 
@@ -29,7 +28,7 @@ button{
 }
 button.addButton{
     
-  background-color: green;
+  background-color:maroon;
   
   
 }
@@ -68,9 +67,20 @@ button.sub{
 
 .hide{
     color:white;
-    background-color: rgb(111, 0, 255);
+    background-color:darkblue;
     
 }
 .footer{
     text-align: center;
+}
+.addtask{
+    background-color:darkgreen;
+}
+
+.clear{
+    padding: 5px;
+    border-radius: 5px;
+    color: azure;
+    background-color:firebrick;
+    cursor: pointer;
 }
