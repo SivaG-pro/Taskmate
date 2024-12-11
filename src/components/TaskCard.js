@@ -3,10 +3,10 @@ export  function TaskCard({task,deletetask}) {
     <div>
       
           <li className={task.completed ? "complete":"incomplete"} >
-            <span className="box">{task.id} - {task.name}
+            <span className="boxes">{task.id} - {task.name}
             <button className="sub" onClick={() => deletetask(task.id)}>Delete</button>
             </span>
-          
+          <br />
           </li>
     </div>
   )

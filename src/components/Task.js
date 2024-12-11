@@ -1,10 +1,8 @@
 import { useState } from 'react';
 import { TaskCard } from './TaskCard';
 import { BoxCard } from './BoxCard';
-export  function Task(props) {
-    const [tasks,settasks]=useState([{id:1,name :"Planner",completed:false},
-        {id:2,name :"Date Populate",completed:true},
-        {id:3,name :"Supplier Populate",completed:true}]);
+export  function Task({title,tasks,settasks}) {
+    
         const [show,setShow]=useState(true);
       // function addcount(){
       //   setCount(count => count+1);
@@ -15,6 +13,7 @@ export  function Task(props) {
       // function subcount(){
       //   setCount(count-1);
       //   console.log(count);
+      console.log(tasks)
       function deletetask(input){
         console.log(input)
         settasks(tasks.filter(tasks => tasks.id !==input))
@@ -26,7 +25,7 @@ export  function Task(props) {
     <>
       <div className="box">
       <ul>
-        <h1 style={style}>Task {props.title}</h1>
+        <h1 style={style}>Task {title}</h1>
         <button className='addButton' onClick={() => setShow(!show) } >{show ? "Hide":"Show"}</button>
         { show && tasks.map((task) => (
           <TaskCard key={task.id} task={task}  deletetask={deletetask} />
@@ -35,7 +34,7 @@ export  function Task(props) {
       </ul>
       </div>
       <br />
-      <BoxCard result="warning">
+      {/* <BoxCard result="warning">
         <p>Need to check planner feedbacks.</p>
         
       </BoxCard>
@@ -48,7 +47,7 @@ export  function Task(props) {
       <BoxCard result="success">
       <p>Supplier populated successfully.</p>
       
-      </BoxCard>
+      </BoxCard> */}
     
       </>
   )
