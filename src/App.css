@@ -14,14 +14,7 @@
     text-align: center;
 }
 /*  */
-.boxes{
-    width: 300px;
-    box-shadow: black 0px 1px 4px ;
-  padding: 10px;
-  margin: auto;
-  align-content: center;
-  border-radius: 5px;
-}
+
 
 
 li{
@@ -75,7 +68,8 @@ button.sub{
 
 .hide{
     color:white;
-    background-color: blue;
+    background-color: rgb(111, 0, 255);
+    
 }
 .footer{
     text-align: center;

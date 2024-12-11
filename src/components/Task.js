@@ -19,11 +19,14 @@ export  function Task(props) {
         console.log(input)
         settasks(tasks.filter(tasks => tasks.id !==input))
       }
+      const style={
+        color:"#03393a"
+      }
   return (
     <>
       <div className="box">
       <ul>
-        <h1>Task {props.title}</h1>
+        <h1 style={style}>Task {props.title}</h1>
         <button className='addButton' onClick={() => setShow(!show) } >{show ? "Hide":"Show"}</button>
         { show && tasks.map((task) => (
           <TaskCard key={task.id} task={task}  deletetask={deletetask} />
