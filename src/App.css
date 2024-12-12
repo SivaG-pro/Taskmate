@@ -12,6 +12,7 @@
     box-shadow: black 0px 1px 4px ;
     align-content: center;
     text-align: center;
+    
 }
 
 
@@ -25,6 +26,7 @@ button{
     border-radius: 5px;
     margin:10px;
     color: aliceblue;
+    display: inline;
     
 }
 button.addButton{
@@ -33,23 +35,16 @@ button.addButton{
   
   
 }
-button.sub{
-    background-color: red;
-    position:relative;
-    left: 230px;
-}
+
 
 .complete{
     color:rgb(12, 228, 12);
-    
-    
-}
-.box span{
-    box-shadow: rgb(12, 228, 12);
+    box-shadow: rgb(9, 230, 9) 0px 1px 4px; 
 }
 
 .incomplete{
     color:red;
+    box-shadow: rgb(222, 11, 11) 0px 1px 4px;
 }
 
 .logo{
@@ -88,16 +83,21 @@ button.sub{
     cursor: pointer;
 }
 
-.boxes{
+.boxes {
     margin: auto;
     display: flex;
     height: 50px;
     width: 400px;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: black 0px 1px 4px ;
-    align-content: center;
+    
+    align-items: center; 
+    justify-content: center; 
     text-align: center;
-    align-items: center;   
+}
+
+button.sub {
+    background-color: red;
+    border-radius: 5px; 
     
 }
