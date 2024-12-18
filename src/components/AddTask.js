@@ -1,10 +1,12 @@
-import { useState } from 'react'
+import { useState,useRef } from 'react'
 import '../App.css'
 export  function AddTask({tasks,settasks}) {
-    const [addTask,setaddTask]=useState("");
+    //const [addTask,setaddTask]=useState("");
     const [progress,setProgress]=useState(false);
+    const taskRef=useRef("");
     function clear(){
-      setaddTask("");
+      //setaddTask("");
+      taskRef.current.value="";
       setProgress(false);
 
     }
@@ -13,7 +15,7 @@ export  function AddTask({tasks,settasks}) {
       //console.log(typeof(progress))
       const task={
         id: Math.floor(Math.random()*10000),
-        name:addTask,
+        name:taskRef.current.value,
         completed:Boolean(progress)
       }
       settasks([...tasks,task])
@@ -24,7 +26,7 @@ export  function AddTask({tasks,settasks}) {
     <div className='box'>
       <form onSubmit={(e) => addTasks(e)}>
         <label htmlFor="task">Taskname:</label>
-        <input type="text" onChange={(e) => setaddTask(e.target.value)} name="task" id="task" autoComplete='off' value={addTask}/>
+        <input type="text"  name="task" id="task" autoComplete='off' ref={taskRef}/>
         <select onChange={(e) => setProgress(e.target.value)} value={progress}>
           <option value={false}>Pending</option>
           <option value={true}>Completed</option>
@@ -32,7 +34,7 @@ export  function AddTask({tasks,settasks}) {
         <button type='Submit' className='addtask'>Add</button>
         <span onClick={() => clear() } className='clear'>Clear</span>
 
-        <p>{addTask}</p>
+        <p></p>
       </form>
     </div>
   )
