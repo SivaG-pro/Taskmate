@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Header } from './components/Header';
 import { Task } from './components/Task.js';
 import { Footer } from './components/Footer.js';
@@ -7,7 +7,14 @@ import './App.css'
 
 
 function App() {
-  const [tasks,settasks]=useState([]);
+
+  const [tasks,settasks]=useState(JSON.parse(localStorage.getItem("tasks"))  || []);
+  
+
+
+  useEffect(() =>{
+    localStorage.setItem("tasks",JSON.stringify(tasks))
+  },[tasks])
   
   return (
     <>
