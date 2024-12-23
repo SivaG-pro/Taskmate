@@ -1,9 +1,9 @@
 import logo from "../assets/logo.png"
 import '../App.css'
-import { useState } from "react"
+
 
 export function Header() {
-  const [theme,settheme]=useState("dark")
+  
  // document.documentElement.classList.add(theme);
 
    

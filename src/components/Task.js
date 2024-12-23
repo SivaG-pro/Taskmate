@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { TaskCard } from './TaskCard';
-import { BoxCard } from './BoxCard';
+
 export  function Task({title,tasks,settasks}) {
     
         const [show,setShow]=useState(true);
