@@ -12,7 +12,7 @@
     box-shadow: black 0px 1px 4px ;
     align-content: center;
     text-align: center;
-    
+    background-color: white;
 }
 
 
@@ -53,6 +53,7 @@ button.addButton{
 .nav{
     position:relative;
     left: 90%;
+    background-color: white;
 }
 .success{
     background-color:lightgreen;
@@ -100,3 +101,4 @@ button.sub {
     border-radius: 5px; 
     
 }
+
